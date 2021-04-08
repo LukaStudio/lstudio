@@ -119,7 +119,6 @@ FileETag None
 </IfModule>
 </FilesMatch>
 # END LBCWpFastestCache
-
 # BEGIN WEBPWpFastestCache
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -134,7 +133,6 @@ Header append Vary Accept env=REDIRECT_accept
 </IfModule>
 AddType image/webp .webp
 # END WEBPWpFastestCache
-
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
 # dynamically generated, and should only be modified via WordPress filters.
@@ -148,5 +146,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /lstudio/index.php [L]
 </IfModule>
-
 # END WordPress
