@@ -10,6 +10,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<link rel="preload" as="style" onload="this.rel='stylesheet'" href="localhost\lstudio\wp-content\cache\wpfc-minified\jn0g3tk3.css">
+	<link rel="preload" as="image" href="http://localhost/lstudio/wp-content/uploads/2021/03/5-min.png">
+	<link rel="preload" as="image" href="http://localhost/lstudio/wp-content/uploads/2021/03/4-min.png">
+	<link rel="preload" as="image" href="http://localhost/lstudio/wp-content/uploads/2021/03/3-min.png">
+	<link rel="preload" as="image" href="http://localhost/lstudio/wp-content/uploads/2021/03/papildomo-apatinis-be-tamsinimo-min.png">
+	<link rel="preload" as="image" href="http://localhost/lstudio/wp-content/uploads/2021/03/1-min-1.png">
 	<?php
 	wp_head();
 	?>
