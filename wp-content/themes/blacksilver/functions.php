@@ -9,6 +9,21 @@
  * @since 1.0.0
  */
 
+function add_rel_preload($html, $handle, $href, $media) {
+if (is_admin())
+    return $html;
+
+$html = <<<EOT
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" 
+id='h8xtv' href='http://localhost/lstudio/wp-content/cache/wpfc-minified/jn0g3tk3/h8xtv.css' type='text/css' media='all' />
+EOT;
+
+return $html;
+}
+
+add_filter( 'style_loader_tag', 'add_rel_preload', 10, 4 );
+
+
 /**
  * Rewrite flush
  */
