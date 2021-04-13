@@ -25,11 +25,13 @@ if ( post_password_required() ) {
 					)
 				);
 				?>
+					<?php the_content(); ?>
 				</div>			
 			</div><!-- .entry-content -->
 			<?php
 		endwhile;
 	endif;
 }
+
 get_footer();
 ?>

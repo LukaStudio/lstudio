@@ -908,6 +908,7 @@
 	.simple-menu #mobile-searchform,
 	.responsive-mobile-menu #mobile-searchform {
 		margin: 0;
+		display: none;
 	}
 
     .gallery-size-thumbnail .gallery-item,
@@ -1516,6 +1517,7 @@
 	.simple-menu #mobile-searchform,
 	.responsive-mobile-menu #mobile-searchform {
 		margin: 0;
+		display: none;
 	}
 
     .gallery-size-thumbnail .gallery-item,

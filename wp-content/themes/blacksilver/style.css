@@ -2967,7 +2967,7 @@ Responsive Menu
 	background-size: cover;
 	width: 100%;
 	height: 65px;
-	background: #000;
+	background: #151618;
 	z-index: 98;
 }
 .menu-is-onscreen.minimal-logo .responsive-mobile-menu-outer {
@@ -3092,6 +3092,7 @@ body .responsive-mobile-menu-outer:after {
 }
 .menu-is-onscreen .responsive-menu-overlay {
 	width: 100%;
+	background-color: #151618;
 }
 .menu-is-onscreen:not(.mobile-mode-active) .responsive-mobile-menu-outer:after {
 	width: 100%;
@@ -3131,7 +3132,7 @@ body .responsive-mobile-menu-outer:after {
 .minimal-menu-overlay,
 .minimal-logo-overlay,
 .responsive-menu-overlay {
-	background: #545454;
+	background: #151618;
 }
 
 .simple-menu,

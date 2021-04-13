@@ -81,19 +81,8 @@ if ( $mobile_menu_active ) {
 	?>
 		<div class="responsive-mobile-menu">
 			<div class="dashboard-columns">
-				<div class="mobile-menu-social">
-					<div class="mobile-socials-wrap clearfix">
-					<?php
-					dynamic_sidebar( 'mobile_social_header' );
-					?>
-					</div>
-				</div>
-			<?php
-			if ( $search_mobileform ) {
-				get_template_part( 'mobile', 'searchform' );
-			}
-			?>
-				<nav>
+				
+						<nav>
 				<?php
 				$custom_menu_call    = '';
 				$user_choice_of_menu = get_post_meta( get_the_id(), 'pagemeta_menu_choice', true );
@@ -129,6 +118,20 @@ if ( $mobile_menu_active ) {
 				);
 				?>
 				</nav>
+				
+				<div class="mobile-menu-social">
+					<div class="mobile-socials-wrap clearfix">
+					<?php
+					dynamic_sidebar( 'mobile_social_header' );
+					?>
+					</div>
+				</div>
+			<?php
+			if ( $search_mobileform ) {
+				get_template_part( 'mobile', 'searchform' );
+			}
+			?>
+		
 				<div class="clearfix"></div>
 			</div>
 		</div>
