@@ -7,15 +7,15 @@
 	>
 <channel>
 	<title>
-	Comments for lstudio	</title>
+	„lstudio“ komentarai	</title>
 	<atom:link href="https://lstudio.lt/comments/feed/" rel="self" type="application/rss+xml" />
 	<link>https://lstudio.lt</link>
 	<description>lstudio</description>
-	<lastBuildDate>Thu, 22 Apr 2021 12:56:45 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 04 Jul 2022 19:34:01 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.7.1</generator>
+	<generator>https://wordpress.org/?v=6.0</generator>
 </channel>
 </rss>
