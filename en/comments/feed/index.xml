@@ -11,11 +11,11 @@
 	<atom:link href="https://lstudio.lt/en/comments/feed/" rel="self" type="application/rss+xml" />
 	<link href="">https://lstudio.lt/en</link>
 	<description>lstudio</description>
-	<lastbuilddate>Tue, 20 Sep 2022 10:03:20 +0000</lastbuilddate>
+	<lastbuilddate>Thu, 22 Dec 2022 14:04:44 +0000</lastbuilddate>
 	<sy:updateperiod>
 	hourly	</sy:updateperiod>
 	<sy:updatefrequency>
 	1	</sy:updatefrequency>
-	<generator>https://wordpress.org/?v=6.0.2</generator>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
 </channel>
 </rss>

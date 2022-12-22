@@ -12,16 +12,16 @@
 	<atom:link href="https://lstudio.lt/feed/" rel="self" type="application/rss+xml" />
 	<link>https://lstudio.lt</link>
 	<description>lstudio</description>
-	<lastBuildDate>Tue, 20 Sep 2022 10:03:20 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 22 Dec 2022 14:04:44 +0000</lastBuildDate>
 	<language>lt-LT</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.2</generator>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
 
 <image>
-	<url>https://lstudio.lt/wp-content/uploads/2021/03/cropped-Favicon-32x32.png</url>
+	<url>https://lstudio.lt/wp-content/uploads/2021/03/cropped-Favicon.png</url>
 	<title>lstudio</title>
 	<link>https://lstudio.lt</link>
 	<width>32</width>
