@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
 	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
@@ -12,13 +13,13 @@
 	<atom:link href="https://lstudio.lt/en/feed/" rel="self" type="application/rss+xml" />
 	<link href="">https://lstudio.lt/en</link>
 	<description>lstudio</description>
-	<lastbuilddate>Mon, 23 Jan 2023 11:36:07 +0000</lastbuilddate>
-	<language>en-US</language>
+	<lastbuilddate>Tue, 10 Mar 2026 11:19:42 +0000</lastbuilddate>
+	<language>en-GB</language>
 	<sy:updateperiod>
 	hourly	</sy:updateperiod>
 	<sy:updatefrequency>
 	1	</sy:updatefrequency>
-	<generator>https://wordpress.org/?v=6.1.1</generator>
+	<generator>https://wordpress.org/?v=6.2</generator>
 
 <image>
 	<url>https://lstudio.lt/wp-content/uploads/2021/03/cropped-Favicon.png</url>
