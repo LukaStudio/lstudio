@@ -207,7 +207,7 @@
 }
 
 .select-arrow {
-  background: url(/wp-content/plugins/imaginem-blocks-ii/admin/images/caret.png) no-repeat 50% 50%;
+  background: url(https://lstudio.lt/wp-content/plugins/imaginem-blocks-ii/admin/images/caret.png) no-repeat 50% 50%;
   position: absolute;
   display: inline-block;
   *display: inline;
@@ -415,7 +415,7 @@
 		    width: 25px;  
 		    height: 25px;  
 		    cursor: pointer;
-		    background: transparent url(/wp-content/plugins/imaginem-blocks-ii/admin/images/handle.png) no-repeat 0 0;
+		    background: transparent url(https://lstudio.lt/wp-content/plugins/imaginem-blocks-ii/admin/images/handle.png) no-repeat 0 0;
 		    color: #1C94C4;  
 		    outline: none;  
 		    top: -9px;  

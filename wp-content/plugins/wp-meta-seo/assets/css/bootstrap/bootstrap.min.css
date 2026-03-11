@@ -164,8 +164,8 @@ td, th {
 
 @font-face {
     font-family: 'Glyphicons Halflings';
-    src: url(/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.eot);
-    src: url(/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.eot#iefix) format('embedded-opentype'), url(/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.woff) format('woff'), url(/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+    src: url(https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.eot);
+    src: url(https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.eot#iefix) format('embedded-opentype'), url(https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.woff) format('woff'), url(https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/css/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
 }
 
 .glyphicon {
