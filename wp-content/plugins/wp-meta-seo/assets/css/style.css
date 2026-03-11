@@ -81,7 +81,7 @@
 }
 
 span.spinner-light {
-    background: url("https://lstudio.lt/wp-content/wp-admin/images/wpspin_light.gif") no-repeat scroll 0 0 / 16px 16px rgba(0, 0, 0, 0);
+    background: url("/wp-content/wp-admin/images/wpspin_light.gif") no-repeat scroll 0 0 / 16px 16px rgba(0, 0, 0, 0);
     background-size: 16px 16px;
     display: none;
     float: right;
@@ -97,7 +97,7 @@ span.spinner-light {
 }
 
 span.metaseo-checked {
-    background: url("https://lstudio.lt/wp-content/wp-admin/images/yes.png") no-repeat scroll 0 0 / 20px 20px rgba(0, 0, 0, 0);
+    background: url("/wp-content/wp-admin/images/yes.png") no-repeat scroll 0 0 / 20px 20px rgba(0, 0, 0, 0);
     display: inline-block;
     float: right;
     height: 20px;
@@ -255,7 +255,7 @@ a.info .tooltip {
 }
 
 .opt-info-warning {
-    /*background: url('https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/loop.png') no-repeat scroll 1px 5px;*/
+    /*background: url('/wp-content/plugins/wp-meta-seo/assets/images/loop.png') no-repeat scroll 1px 5px;*/
     min-height: 30px;
 }
 
@@ -324,7 +324,7 @@ span.metaseo-loading {
     position: absolute;
     left: 45%;
     top: 40%;
-    background: url('https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/gplus-loader.gif') no-repeat scroll 0 0 transparent;
+    background: url('/wp-content/plugins/wp-meta-seo/assets/images/gplus-loader.gif') no-repeat scroll 0 0 transparent;
 }
 
 span.meta-update {
@@ -335,11 +335,11 @@ span.meta-update {
 }
 
 span.update-loader {
-    background: url('https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/update_loader.gif') no-repeat scroll 0 0 transparent;
+    background: url('/wp-content/plugins/wp-meta-seo/assets/images/update_loader.gif') no-repeat scroll 0 0 transparent;
 }
 
 span.hz-loading {
-    background: url('https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/hz-loading.gif') no-repeat scroll 8px 6px transparent;
+    background: url('/wp-content/plugins/wp-meta-seo/assets/images/hz-loading.gif') no-repeat scroll 8px 6px transparent;
     display: inline-block;
     min-width: 100px;
     min-height: 14px;

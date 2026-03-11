@@ -4737,10 +4737,10 @@ i.fontawesome {
 	background-position: center center;
 }
 .tubular-controls .tubular-play {
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/images/icons/play-button.png);
+	background-image: url(/wp-content/themes/blacksilver/images/icons/play-button.png);
 }
 .tubular-controls .tubular-pause {
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/images/icons/pause-button.png);
+	background-image: url(/wp-content/themes/blacksilver/images/icons/pause-button.png);
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 #tubuter-container {

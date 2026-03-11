@@ -270,7 +270,7 @@ a.tt {
 }
 
 .ptt-hover span.top, .tt:hover span.top {
-    background: url("https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/bubble-top-v2.png") no-repeat scroll 80px 1px rgba(0, 0, 0, 0);
+    background: url("/wp-content/plugins/wp-meta-seo/assets/images/bubble-top-v2.png") no-repeat scroll 80px 1px rgba(0, 0, 0, 0);
     display: block;
     padding: 15px 8px 0;
 }
@@ -386,7 +386,7 @@ strong {
 }
 
 .change-up.change-r {
-    background: url("https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/arrow-up.png") no-repeat scroll 5px 50% #c32f16;
+    background: url("/wp-content/plugins/wp-meta-seo/assets/images/arrow-up.png") no-repeat scroll 5px 50% #c32f16;
     color: #fff;
 }
 
@@ -395,12 +395,12 @@ strong {
 }
 
 .change-up {
-    background: url("https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/arrow-up.png") no-repeat scroll 5px 50% #68b325;
+    background: url("/wp-content/plugins/wp-meta-seo/assets/images/arrow-up.png") no-repeat scroll 5px 50% #68b325;
     color: #fff;
 }
 
 .change-down {
-    background: #68b325 url("https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/arrow-down.png") no-repeat 5px 50%;
+    background: #68b325 url("/wp-content/plugins/wp-meta-seo/assets/images/arrow-down.png") no-repeat 5px 50%;
     color: #fff;
 }
 
@@ -429,7 +429,7 @@ strong {
 }
 
 .note-no-data .col-pad {
-    background: url("https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/loop.png") no-repeat scroll 0 50% transparent;
+    background: url("/wp-content/plugins/wp-meta-seo/assets/images/loop.png") no-repeat scroll 0 50% transparent;
     display: block;
     padding-left: 45px;
 }
@@ -549,7 +549,7 @@ strong {
     width: 20px;
     height: 20px;
     margin: 0 5px;
-    background-image: url(https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/warnig-red.png);
+    background-image: url(/wp-content/plugins/wp-meta-seo/assets/images/warnig-red.png);
     background-size: 100% 100%;
 }
 
@@ -709,11 +709,11 @@ span.wpms-seoImgRemove {
 }
 
 .wpmseotab th.headerSortUp {
-    background-image: url(https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/asc.gif);
+    background-image: url(/wp-content/plugins/wp-meta-seo/assets/images/asc.gif);
 }
 
 .wpmseotab th.headerSortDown {
-    background-image: url(https://lstudio.lt/wp-content/plugins/wp-meta-seo/assets/images/desc.gif);
+    background-image: url(/wp-content/plugins/wp-meta-seo/assets/images/desc.gif);
 }
 
 .wpmseotab th.header {

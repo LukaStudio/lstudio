@@ -8257,66 +8257,66 @@ h6.title-simple-case {
 .dark-divider.divider-stripes,
 .divider-stripes {
 	background-repeat: repeat-x;
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/dividers/stripes.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/dividers/stripes.png);
 	width: 100%;
 	padding-top: 4px;
 }
 .bright-divider.divider-stripes {
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/darkskin/dividers/stripes.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/darkskin/dividers/stripes.png);
 }
 .dark-divider.divider-thinfade,
 .divider-thinfade {
 	background-repeat: no-repeat;
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/dividers/thin_fade.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/dividers/thin_fade.png);
 	background-position: 50% 50%;
 	width: 100%;
 	padding-top: 3px;
 }
 .bright-divider.divider-thinfade {
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/darkskin/dividers/thin_fade.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/darkskin/dividers/thin_fade.png);
 }
 .dark-divider.divider-threelines,
 .divider-threelines {
 	background-repeat: repeat-x;
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/dividers/threelines.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/dividers/threelines.png);
 	width: 100%;
 	padding-top: 5px;
 }
 .bright-divider.divider-threelines {
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/darkskin/dividers/threelines.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/darkskin/dividers/threelines.png);
 }
 .dark-divider.divider-circleline,
 .divider-circleline {
 	background-repeat: no-repeat;
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/dividers/circleline.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/dividers/circleline.png);
 	background-position: 50% 50%;
 	width: 100%;
 	padding-top: 10px;
 }
 .bright-divider.divider-circleline {
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/darkskin/dividers/circleline.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/darkskin/dividers/circleline.png);
 }
 .dark-divider.divider-stripedcenter,
 .divider-stripedcenter {
 	background-repeat: no-repeat;
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/dividers/stripedcenter.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/dividers/stripedcenter.png);
 	background-position: 50% 50%;
 	width: 100%;
 	padding-top: 10px;
 }
 .bright-divider.divider-stripedcenter {
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/darkskin/dividers/stripedcenter.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/darkskin/dividers/stripedcenter.png);
 }
 .dark-divider.divider-linedcenter,
 .divider-linedcenter {
 	background-repeat: no-repeat;
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/dividers/linedcenter.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/dividers/linedcenter.png);
 	background-position: 50% 50%;
 	width: 100%;
 	padding-top: 10px;
 }
 .bright-divider.divider-linedcenter {
-	background-image: url(https://lstudio.lt/wp-content/themes/blacksilver/css/images/darkskin/dividers/linedcenter.png);
+	background-image: url(/wp-content/themes/blacksilver/css/images/darkskin/dividers/linedcenter.png);
 }
 /*
 SHORTCODE ServiceBoxes
@@ -14700,7 +14700,7 @@ body:not(.lg-from-hash) .mtheme-lightbox.lg-outer.lg-start-fade .lg-item.lg-comp
 	height: calc(100% - 60px);
 }
 .mtheme-lightbox.lg-outer .lg-item {
-	background: url(https://lstudio.lt/wp-content/themes/blacksilver/images/preload-circle.png) no-repeat scroll center center transparent;
+	background: url(/wp-content/themes/blacksilver/images/preload-circle.png) no-repeat scroll center center transparent;
 }
 .mtheme-lightbox.lg-outer .lg-image {
 	max-height: -webkit-calc(100% - 140px);

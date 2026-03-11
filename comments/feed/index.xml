@@ -9,8 +9,8 @@
 <channel>
 	<title>
 	„lstudio“ komentarai	</title>
-	<atom:link href="https://lstudio.lt/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>https://lstudio.lt</link>
+	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
+	<link></link>
 	<description>lstudio</description>
 	<lastBuildDate>Tue, 10 Mar 2026 22:59:46 +0000</lastBuildDate>
 	<sy:updatePeriod>

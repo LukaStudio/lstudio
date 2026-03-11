@@ -73,32 +73,32 @@ html {
   display: none;
 }
 #name{
-background: url(https://lstudio.lt/wp-content/uploads/2021/04/user.svg) right no-repeat;
+background: url(/wp-content/uploads/2021/04/user.svg) right no-repeat;
     background-size: 1.2em;
     background-position: right;
 	background-origin: content-box;
  }
  
  #email{
-background: url(https://lstudio.lt/wp-content/uploads/2021/04/message.svg) right no-repeat;
+background: url(/wp-content/uploads/2021/04/message.svg) right no-repeat;
     background-size: 1.2em;
     background-position: right;
 	background-origin: content-box;
  }
   #message{
-background: url(https://lstudio.lt/wp-content/uploads/2021/04/edit.svg) right no-repeat;
+background: url(/wp-content/uploads/2021/04/edit.svg) right no-repeat;
     background-size: 1.2em;
     background-position: top right;
 	background-origin: content-box;
  }
    #feedback{
-background: url(https://lstudio.lt/wp-content/uploads/2021/04/edit.svg) right no-repeat;
+background: url(/wp-content/uploads/2021/04/edit.svg) right no-repeat;
     background-size: 1.2em;
     background-position: right;
 	background-origin: content-box;
  }
     #email-subject{
-background: url(https://lstudio.lt/wp-content/uploads/2021/04/edit.svg) right no-repeat;
+background: url(/wp-content/uploads/2021/04/edit.svg) right no-repeat;
     background-size: 1.2em;
     background-position: right;
 	background-origin: content-box;
