@@ -72,7 +72,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <script type="text/javascript" src="https://lstudio.lt/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
 <script type="text/javascript" id="jquery-js-after">
 /* <![CDATA[ */
-var lightbox_transition="lg-soft-zoom",lightbox_thumbnails="false",ajax_var_url="https://lstudio.lt/wp-admin/admin-ajax.php",ajax_var_nonce="7f26e0b10d";
+var lightbox_transition="lg-soft-zoom",lightbox_thumbnails="false",ajax_var_url="https://lstudio.lt/wp-admin/admin-ajax.php",ajax_var_nonce="4190bfab36";
 //# sourceURL=jquery-js-after
 /* ]]> */
 </script>
@@ -2333,69 +2333,140 @@ h1, h2, h3, h4, h5, h6, .entry-content h1, .entry-content h2, .entry-content h3,
         </div>
       </div>
 
-      <!-- DEŠINĖ — forma -->
-      <div>
-        <style>
-        .lstudio-form-wrap { max-width:680px; margin:0 auto; }
-        .lstudio-form-wrap .gform { background:#12161f; border:1px solid rgba(255,255,255,0.07); border-radius:20px; padding:20px; }
-        .lstudio-form-wrap .2-laukai { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
-        .lstudio-form-wrap .pure-group, .lstudio-form-wrap fieldset.pure-group { border:none; padding:0; margin:0 0 16px 0; }
-        .lstudio-form-wrap input, .lstudio-form-wrap textarea { width:100%; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:14px 18px; font-family:'DM Sans',sans-serif; font-size:0.95rem; font-weight:300; color:#f0f3ff; outline:none; transition:border-color 0.3s ease, background 0.3s ease; box-sizing:border-box; }
-        .lstudio-form-wrap input::placeholder, .lstudio-form-wrap textarea::placeholder { color:#8892a4; }
-        .lstudio-form-wrap input:focus, .lstudio-form-wrap textarea:focus { border-color:rgba(79,124,255,0.5); background:rgba(79,124,255,0.04); }
-        .lstudio-form-wrap textarea { resize:vertical; min-height:140px; }
-        .lstudio-form-wrap button { width:100%; background:#4f7cff; color:#fff; font-family:'Jost',sans-serif; font-weight:600; font-size:1rem; padding:15px 32px; border:none; border-radius:10px; cursor:pointer; transition:background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; letter-spacing:0.02em; margin-top:8px; }
-        .lstudio-form-wrap button:hover { background:#3d6aee; transform:translateY(-2px); box-shadow:0 12px 32px rgba(79,124,255,0.35); }
-        .lstudio-form-wrap .email-invalid { font-size:0.8rem; color:#ff6b6b; margin-top:6px; display:block; }
-        .lstudio-form-wrap .thankyou_message p { font-family:'DM Sans',sans-serif; font-size:1rem; color:#7ed9a0 !important; font-weight:300; }
-        .lstudio-form-wrap .honeypot-field { display:none !important; }
-        @media (max-width:600px) { .lstudio-form-wrap .gform { padding:28px 20px; } .lstudio-form-wrap .2-laukai { grid-template-columns:1fr; } }
-        </style>
+<!-- DEŠINĖ — forma -->
+<div>
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+  <style>
+  .lstudio-form-wrap { max-width:680px; margin:0 auto; }
+  .lstudio-form-wrap .gform { background:#12161f; border:1px solid rgba(255,255,255,0.07); border-radius:20px; padding:20px; }
+  .lstudio-form-wrap .2-laukai { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
+  .lstudio-form-wrap .pure-group, .lstudio-form-wrap fieldset.pure-group { border:none; padding:0; margin:0 0 16px 0; }
+  .lstudio-form-wrap input, .lstudio-form-wrap textarea { width:100%; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:14px 18px; font-family:'DM Sans',sans-serif; font-size:0.95rem; font-weight:300; color:#f0f3ff; outline:none; transition:border-color 0.3s ease, background 0.3s ease; box-sizing:border-box; }
+  .lstudio-form-wrap input::placeholder, .lstudio-form-wrap textarea::placeholder { color:#8892a4; }
+  .lstudio-form-wrap input:focus, .lstudio-form-wrap textarea:focus { border-color:rgba(79,124,255,0.5); background:rgba(79,124,255,0.04); }
+  .lstudio-form-wrap textarea { resize:vertical; min-height:140px; }
+  .lstudio-form-wrap button { width:100%; background:#4f7cff; color:#fff; font-family:'Jost',sans-serif; font-weight:600; font-size:1rem; padding:15px 32px; border:none; border-radius:10px; cursor:pointer; transition:background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; letter-spacing:0.02em; margin-top:8px; }
+  .lstudio-form-wrap button:hover { background:#3d6aee; transform:translateY(-2px); box-shadow:0 12px 32px rgba(79,124,255,0.35); }
+  .lstudio-form-wrap .email-invalid { font-size:0.8rem; color:#ff6b6b; margin-top:6px; display:block; }
+  .lstudio-form-wrap .thankyou_message p { font-family:'DM Sans',sans-serif; font-size:1rem; color:#7ed9a0 !important; font-weight:300; }
+  .lstudio-form-wrap .honeypot-field { position:absolute !important; left:-9999px !important; top:-9999px !important; width:1px !important; height:1px !important; overflow:hidden !important; opacity:0 !important; pointer-events:none !important; }
+  .lstudio-form-wrap .captcha-wrapper { max-height:0; opacity:0; overflow:hidden; transition:max-height 0.5s ease, opacity 0.5s ease, margin 0.5s ease; margin-bottom:0; }
+  .lstudio-form-wrap .captcha-wrapper.visible { max-height:200px; opacity:1; margin-bottom:16px; }
+  @media (max-width:600px) { .lstudio-form-wrap .gform { padding:28px 20px; } .lstudio-form-wrap .2-laukai { grid-template-columns:1fr; } }
+  </style>
 
-        <div class="lstudio-form-wrap">
-          <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbykXsB7dkfmsAAry89FiyhJGMYKxjSwJGvCUQL6mstpCZXz5o1AcUis3wW1ZYiI6M0SGA/exec">
-            <div class="form-elements">
-              <div class="2-laukai">
-                <div class="pure-group">
-                  <input id="name" name="Vardas" placeholder="Jūsų vardas">
-                </div>
-                <div class="pure-group">
-                  <input id="email" name="El. paštas" type="email" required placeholder="Jūsų el. paštas">
-                  <span class="email-invalid" style="display:none">Netinkamas el. paštas</span>
-                </div>
-              </div>
-              <fieldset class="pure-group">
-                <input name="Tema" id="email-subject" placeholder="Tema">
-              </fieldset>
-              <fieldset class="pure-group">
-                <textarea id="message" name="Žinutė" rows="5" placeholder="Jūsų žinutė"></textarea>
-              </fieldset>
-              <p style="margin:0;">
-                <button type="submit">Siųsti žinutę →</button>
-              </p>
-            </div>
-            <div class="thankyou_message" style="display:none; text-align:center; padding:32px 0;">
-              <i class="fas fa-check-circle" style="font-size:2.5rem; color:#28c840; margin-bottom:16px; display:block;"></i>
-              <p>Ačiū! Jūsų žinutė išsiųsta.<br>Netrukus susisieksime.</p>
-            </div>
-            <fieldset class="pure-group honeypot-field">
-              <label for="honeypot">To help avoid spam</label>
-              <input id="honeypot" type="text" name="honeypot" value="">
-            </fieldset>
-          </form>
+  <div class="lstudio-form-wrap">
+    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbykXsB7dkfmsAAry89FiyhJGMYKxjSwJGvCUQL6mstpCZXz5o1AcUis3wW1ZYiI6M0SGA/exec">
+      <div class="form-elements">
+        <div class="2-laukai">
+          <div class="pure-group">
+            <input id="name" name="Vardas" placeholder="Jūsų vardas">
+          </div>
+          <div class="pure-group">
+            <input id="email" name="El. paštas" type="email" required placeholder="Jūsų el. paštas">
+            <span class="email-invalid" style="display:none">Netinkamas el. paštas</span>
+          </div>
+        </div>
+        <fieldset class="pure-group">
+          <input name="Tema" id="email-subject" placeholder="Tema">
+        </fieldset>
+        <fieldset class="pure-group">
+          <textarea id="message" name="Žinutė" rows="5" placeholder="Jūsų žinutė"></textarea>
+        </fieldset>
+
+        <div class="captcha-wrapper" id="captcha-wrapper-2">
+          <div class="h-captcha" data-sitekey="9edc7d78-879e-4a88-bba6-e07a7502fafc"></div>
         </div>
 
-        <script data-cfasync="false" type="text/javascript"
-        src="https://lstudio.lt/wp-content/themes/blacksilver/js/form-submission-handler.js"></script>
+        <!-- form_loaded_at be name= — nesiųs į Google Script -->
+        <input type="hidden" id="form_loaded_at_2" value="">
+
+        <p style="margin:0;">
+          <button type="submit">Siųsti žinutę →</button>
+        </p>
+      </div>
+
+      <div class="thankyou_message" style="display:none; text-align:center; padding:32px 0;">
+        <i class="fas fa-check-circle" style="font-size:2.5rem; color:#28c840; margin-bottom:16px; display:block;"></i>
+        <p>Ačiū! Jūsų žinutė išsiųsta.<br>Netrukus susisieksime.</p>
+      </div>
+
+      <fieldset class="pure-group honeypot-field" aria-hidden="true">
+        <label for="honeypot">Leave this empty</label>
+        <input id="honeypot" type="text" name="honeypot" value="" tabindex="-1" autocomplete="off">
+      </fieldset>
+    </form>
+  </div>
+
+  <script data-cfasync="false" type="text/javascript"
+  src="https://lstudio.lt/wp-content/themes/blacksilver/js/form-submission-handler.js"></script>
+
+  <script>
+    (function() {
+      var loadedAtField = document.getElementById('form_loaded_at_2');
+      var captchaWrapper = document.getElementById('captcha-wrapper-2');
+      var form = document.querySelector('.lstudio-form-wrap .gform');
+
+      loadedAtField.value = Date.now();
+
+      var captchaShown = false;
+
+      function showCaptcha() {
+        if (!captchaShown) {
+          captchaShown = true;
+          captchaWrapper.classList.add('visible');
+        }
+      }
+
+      document.querySelectorAll('.lstudio-form-wrap input, .lstudio-form-wrap textarea').forEach(function(field) {
+        if (field.id !== 'honeypot' && field.id !== 'form_loaded_at_2') {
+          field.addEventListener('focus', showCaptcha);
+          field.addEventListener('input', showCaptcha);
+        }
+      });
+
+      form.addEventListener('submit', function(e) {
+
+        // 1. Honeypot
+        var honeypot = document.getElementById('honeypot');
+        if (honeypot && honeypot.value.trim() !== '') {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          form.querySelector('.form-elements').style.display = 'none';
+          form.querySelector('.thankyou_message').style.display = 'block';
+          return false;
+        }
+
+        // 2. Laiko tikrinimas
+        var loadedAt = parseInt(loadedAtField.value, 10);
+        var elapsed = (Date.now() - loadedAt) / 1000;
+        if (elapsed < 4) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          form.querySelector('.form-elements').style.display = 'none';
+          form.querySelector('.thankyou_message').style.display = 'block';
+          return false;
+        }
+
+        // 3. hCaptcha
+        var hcaptchaResponse = form.querySelector('[name="h-captcha-response"]');
+        if (!hcaptchaResponse || hcaptchaResponse.value.trim() === '') {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          showCaptcha();
+          alert('Prašome užpildyti CAPTCHA.');
+          return false;
+        }
+
+      }, true);
+
+    })();
+  </script>
       </div>
 </div>
     </div>
   
 </section>
-
-
-
-
 <!-- ═══════════════════════════════════════════
      PORTFOLIO
 ═══════════════════════════════════════════ -->
@@ -2741,8 +2812,8 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 </script>
 <script type="text/javascript" id="imaginem-blocks-js-extra">
 /* <![CDATA[ */
-var ajax_var = {"url":"https://lstudio.lt/wp-admin/admin-ajax.php","nonce":"7f26e0b10d"};
-var ajax_var = {"url":"https://lstudio.lt/wp-admin/admin-ajax.php","nonce":"7f26e0b10d"};
+var ajax_var = {"url":"https://lstudio.lt/wp-admin/admin-ajax.php","nonce":"4190bfab36"};
+var ajax_var = {"url":"https://lstudio.lt/wp-admin/admin-ajax.php","nonce":"4190bfab36"};
 //# sourceURL=imaginem-blocks-js-extra
 /* ]]> */
 </script>
@@ -2777,7 +2848,7 @@ var ajax_var = {"url":"https://lstudio.lt/wp-admin/admin-ajax.php","nonce":"7f26
 <script type="text/javascript" src="https://lstudio.lt/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js" id="elementor-sticky-js"></script>
 <script type="text/javascript" id="elementor-pro-frontend-js-before">
 /* <![CDATA[ */
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lstudio.lt\/wp-admin\/admin-ajax.php","nonce":"0e0c605919","urls":{"assets":"https:\/\/lstudio.lt\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"\u0160iame puslapyje nerasta joki\u0173 antra\u0161\u010di\u0173."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"lt_LT","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/lstudio.lt\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lstudio.lt\/wp-admin\/admin-ajax.php","nonce":"448bb67b03","urls":{"assets":"https:\/\/lstudio.lt\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"\u0160iame puslapyje nerasta joki\u0173 antra\u0161\u010di\u0173."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"lt_LT","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/lstudio.lt\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 //# sourceURL=elementor-pro-frontend-js-before
 /* ]]> */
 </script>
