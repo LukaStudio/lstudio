@@ -74,7 +74,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <script type="text/javascript" src="https://lstudio.lt/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
 <script type="text/javascript" id="jquery-js-after">
 /* <![CDATA[ */
-var lightbox_transition="lg-soft-zoom",lightbox_thumbnails="false",ajax_var_url="https://lstudio.lt/wp-admin/admin-ajax.php",ajax_var_nonce="7f26e0b10d";
+var lightbox_transition="lg-soft-zoom",lightbox_thumbnails="false",ajax_var_url="https://lstudio.lt/wp-admin/admin-ajax.php",ajax_var_nonce="e29ca6ea59";
 //# sourceURL=jquery-js-after
 /* ]]> */
 </script>
@@ -84,28 +84,29 @@ var lightbox_transition="lg-soft-zoom",lightbox_thumbnails="false",ajax_var_url=
 <link rel="alternate" hreflang="en" href="https://lstudio.lt/en/contact/">
 <link rel="alternate" hreflang="lt" href="https://lstudio.lt/susisiekti/">
 <link rel="alternate" hreflang="x-default" href="https://lstudio.lt/susisiekti/">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "name": "Contact LStudio",
-  "url": "https://lstudio.lt/en/contact/",
-  "description": "Contact LStudio regarding drone filming, photography or website development. We respond within 24 hours.",
-  "image": "https://lstudio.lt/wp-content/uploads/2026/03/Lstudio-Kontaktai.jpg",
-  "mainEntity": {
-    "@type": "LocalBusiness",
-    "name": "LStudio",
-    "url": "https://lstudio.lt/en/",
-    "logo": "https://lstudio.lt/wp-content/uploads/2021/03/Lstudio-Logo-Su-Tekstu-Baltas-1400px.png",
-    "image": "https://lstudio.lt/wp-content/uploads/2026/03/Lstudio-Kontaktai.jpg",
-    "telephone": "+37064323397",
-    "email": "labas@lstudio.lt",
-    "contactType": "customer service",
-    "areaServed": "LT",
-    "availableLanguage": ["Lithuanian", "English"]
-  }
-}
-</script>
+<script type="application/ld+json">{
+    "@context": "https:\/\/schema.org",
+    "@type": "ContactPage",
+    "name": "Contact LStudio",
+    "url": "https:\/\/lstudio.lt\/susisiekti\/",
+    "description": "Contact LStudio for drone filming, photography or web development. We respond within 24 hours.",
+    "image": "https:\/\/lstudio.lt\/wp-content\/uploads\/2026\/03\/Lstudio-Kontaktai.jpg",
+    "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "LStudio",
+        "url": "https:\/\/lstudio.lt",
+        "logo": "https:\/\/lstudio.lt\/wp-content\/uploads\/2021\/03\/Lstudio-Logo-Su-Tekstu-Baltas-1400px.png",
+        "image": "https:\/\/lstudio.lt\/wp-content\/uploads\/2026\/03\/Lstudio-Kontaktai.jpg",
+        "telephone": "+37064323397",
+        "email": "labas@lstudio.lt",
+        "contactType": "customer service",
+        "areaServed": "LT",
+        "availableLanguage": [
+            "Lithuanian",
+            "English"
+        ]
+    }
+}</script>
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css" id="custom-background-css">
 body.custom-background { background-color: #fcfcfc; }
 </style>
@@ -663,63 +664,144 @@ h1, h2, h3, h4, h5, h6, .entry-content h1, .entry-content h2, .entry-content h3,
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="contact form example">
- 
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <style>
+      .honeypot-field {
+        position: absolute !important;
+        left: -9999px !important;
+        top: -9999px !important;
+        width: 1px !important;
+        height: 1px !important;
+        overflow: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+
+      /* Captcha hidden by default */
+      .captcha-wrapper {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+      }
+
+      /* Captcha visible state */
+      .captcha-wrapper.visible {
+        max-height: 120px;
+        opacity: 1;
+      }
+    </style>
 
 
 
-
-
-<!-- START HERE -->
- 
    <link rel="stylesheet" href="https://lstudio.lt/wp-content/themes/blacksilver/css/form-pure.css">
    <link rel="stylesheet" type="text/css" href="https://lstudio.lt/wp-content/themes/blacksilver/css/form-s.css">
-
    
   <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbykXsB7dkfmsAAry89FiyhJGMYKxjSwJGvCUQL6mstpCZXz5o1AcUis3wW1ZYiI6M0SGA/exec">
-    <!-- change the form action to your script url -->
 
     <div class="form-elements">
-	<div class="2-laukai">
-      <div class="pure-group">
-        <input id="name" name="Vardas" placeholder="Your name">
+      <div class="2-laukai">
+        <div class="pure-group">
+          <input id="name" name="Vardas" placeholder="Your name">
+        </div>
+
+        <div class="pure-group">
+          <input id="email" name="El. paštas" type="email" value="" required placeholder="Your email address">
+          <span class="email-invalid" style="display:none">Incorrect email address</span>
+        </div>
       </div>
-	  
-	      <div class="pure-group">
-        <input id="email" name="El. paštas" type="email" value="" required placeholder="Your email address">
-        <span class="email-invalid" style="display:none">
-          Incorrect email address</span>
-      </div>
-	  </div>
-	  <fieldset class="pure-group">
-	  <input name="Tema" id="email-subject" placeholder="Subject">
-	   </fieldset>
-	   
+
+      <fieldset class="pure-group">
+        <input name="Tema" id="email-subject" placeholder="Subject">
+      </fieldset>
+
       <fieldset class="pure-group">
         <textarea id="message" name="Žinutė" rows="5" placeholder="Your message"></textarea>
       </fieldset>
-  
-	 <p>
-	 <button>
-        Contact</button>
-		</p>
+
+      <!-- Captcha wrapped for smooth reveal -->
+      <div class="captcha-wrapper" id="captcha-wrapper">
+        <div class="h-captcha" data-sitekey="9edc7d78-879e-4a88-bba6-e07a7502fafc"></div>
+      </div>
+
+      <input type="hidden" name="form_loaded_at" id="form_loaded_at" value="">
+
+      <p>
+        <button type="submit">Contact</button>
+      </p>
     </div>
 
-    <!-- Customise the Thankyou Message People See when they submit the form: -->
-    <div class="thankyou_message" style="display:none;text-align: center;    color: #333333;">
+    <div class="thankyou_message" style="display:none;text-align: center; color: #333333;">
       <p>Thank you! Your message has been sent. We will be in touch shortly.</p>
     </div>
-<fieldset class="pure-group honeypot-field">
-        <label for="honeypot">To help avoid spam</label>
-        <input id="honeypot" type="text" name="honeypot" value="">
-      </fieldset>
+
+    <fieldset class="pure-group honeypot-field" aria-hidden="true">
+      <label for="honeypot">Leave this empty</label>
+      <input id="honeypot" type="text" name="honeypot" value="" tabindex="-1" autocomplete="off">
+    </fieldset>
+
   </form>
 
-  <!-- Submit the Form to Google Using "AJAX" -->
   <script data-cfasync="false" type="text/javascript"
   src="https://lstudio.lt/wp-content/themes/blacksilver/js/form-submission-handler.js"></script>
-<!-- END -->
 
+  <script>
+    document.getElementById('form_loaded_at').value = Date.now();
 
+    var captchaShown = false;
+
+    function showCaptcha() {
+      if (!captchaShown) {
+        captchaShown = true;
+        document.getElementById('captcha-wrapper').classList.add('visible');
+      }
+    }
+
+    // Show captcha on any real interaction with the form fields
+    var formFields = document.querySelectorAll('.gform input, .gform textarea');
+    formFields.forEach(function(field) {
+      // Excludes honeypot — it has tabindex=-1 and is off-screen
+      if (field.id !== 'honeypot' && field.id !== 'form_loaded_at') {
+        field.addEventListener('focus', showCaptcha);
+        field.addEventListener('input', showCaptcha);
+      }
+    });
+
+    document.querySelector('.gform').addEventListener('submit', function(e) {
+
+      // 1. Honeypot check
+      var honeypot = document.getElementById('honeypot');
+      if (honeypot && honeypot.value.trim() !== '') {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        document.querySelector('.form-elements').style.display = 'none';
+        document.querySelector('.thankyou_message').style.display = 'block';
+        return false;
+      }
+
+      // 2. Time check
+      var loadedAt = parseInt(document.getElementById('form_loaded_at').value, 10);
+      var elapsed = (Date.now() - loadedAt) / 1000;
+      if (elapsed < 4) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        document.querySelector('.form-elements').style.display = 'none';
+        document.querySelector('.thankyou_message').style.display = 'block';
+        return false;
+      }
+
+      // 3. hCaptcha check
+      var hcaptchaResponse = document.querySelector('[name="h-captcha-response"]');
+      if (!hcaptchaResponse || hcaptchaResponse.value.trim() === '') {
+        e.preventDefault();
+        // Show captcha in case it wasn't visible yet
+        showCaptcha();
+        alert('Prašome užpildyti CAPTCHA.');
+        return false;
+      }
+
+    }, true);
+  </script>
 
 
 		</div>
@@ -767,16 +849,16 @@ h1, h2, h3, h4, h5, h6, .entry-content h1, .entry-content h2, .entry-content h3,
 </script>
 <script type="text/javascript" id="trp-dynamic-translator-js-extra">
 /* <![CDATA[ */
-var trp_data = {"trp_custom_ajax_url":"https://lstudio.lt/wp-content/plugins/translatepress-multilingual/includes/trp-ajax.php","trp_wp_ajax_url":"https://lstudio.lt/wp-admin/admin-ajax.php","trp_language_to_query":"en_GB","trp_original_language":"lt_LT","trp_current_language":"en_GB","trp_skip_selectors":["[data-no-translation]","[data-no-dynamic-translation]","[data-trp-translate-id-innertext]","script","style","head","trp-span","translate-press","[data-trp-translate-id]","[data-trpgettextoriginal]","[data-trp-post-slug]"],"trp_base_selectors":["data-trp-translate-id","data-trpgettextoriginal","data-trp-post-slug"],"trp_attributes_selectors":{"text":{"accessor":"outertext","attribute":false},"block":{"accessor":"innertext","attribute":false},"image_src":{"selector":"img[src]","accessor":"src","attribute":true},"submit":{"selector":"input[type='submit'],input[type='button'], input[type='reset']","accessor":"value","attribute":true},"placeholder":{"selector":"input[placeholder],textarea[placeholder]","accessor":"placeholder","attribute":true},"title":{"selector":"[title]","accessor":"title","attribute":true},"a_href":{"selector":"a[href]","accessor":"href","attribute":true},"button":{"accessor":"outertext","attribute":false},"option":{"accessor":"innertext","attribute":false},"aria_label":{"selector":"[aria-label]","accessor":"aria-label","attribute":true},"video_src":{"selector":"video[src]","accessor":"src","attribute":true},"video_poster":{"selector":"video[poster]","accessor":"poster","attribute":true},"video_source_src":{"selector":"video source[src]","accessor":"src","attribute":true},"audio_src":{"selector":"audio[src]","accessor":"src","attribute":true},"audio_source_src":{"selector":"audio source[src]","accessor":"src","attribute":true},"picture_image_src":{"selector":"picture image[src]","accessor":"src","attribute":true},"picture_source_srcset":{"selector":"picture source[srcset]","accessor":"srcset","attribute":true},"image_alt":{"selector":"img[alt]","accessor":"alt","attribute":true},"meta_desc":{"selector":"meta[name=\"description\"],meta[property=\"og:title\"],meta[property=\"og:description\"],meta[property=\"og:site_name\"],meta[property=\"og:image:alt\"],meta[name=\"twitter:title\"],meta[name=\"twitter:description\"],meta[name=\"twitter:image:alt\"],meta[name=\"DC.Title\"],meta[name=\"DC.Description\"]","accessor":"content","attribute":true},"page_title":{"selector":"title","accessor":"innertext","attribute":false},"meta_desc_img":{"selector":"meta[property=\"og:image\"],meta[property=\"og:image:secure_url\"],meta[name=\"twitter:image\"]","accessor":"content","attribute":true}},"trp_attributes_accessors":["outertext","innertext","src","value","placeholder","title","href","aria-label","poster","srcset","alt","content"],"gettranslationsnonceregular":"16caf53f97","showdynamiccontentbeforetranslation":"","skip_strings_from_dynamic_translation":[],"skip_strings_from_dynamic_translation_for_substrings":{"href":["amazon-adsystem","googleads","g.doubleclick"]},"duplicate_detections_allowed":"100","trp_translate_numerals_opt":"no","trp_no_auto_translation_selectors":["[data-no-auto-translation]"]};
-var trp_data = {"trp_custom_ajax_url":"https://lstudio.lt/wp-content/plugins/translatepress-multilingual/includes/trp-ajax.php","trp_wp_ajax_url":"https://lstudio.lt/wp-admin/admin-ajax.php","trp_language_to_query":"en_GB","trp_original_language":"lt_LT","trp_current_language":"en_GB","trp_skip_selectors":["[data-no-translation]","[data-no-dynamic-translation]","[data-trp-translate-id-innertext]","script","style","head","trp-span","translate-press","[data-trp-translate-id]","[data-trpgettextoriginal]","[data-trp-post-slug]"],"trp_base_selectors":["data-trp-translate-id","data-trpgettextoriginal","data-trp-post-slug"],"trp_attributes_selectors":{"text":{"accessor":"outertext","attribute":false},"block":{"accessor":"innertext","attribute":false},"image_src":{"selector":"img[src]","accessor":"src","attribute":true},"submit":{"selector":"input[type='submit'],input[type='button'], input[type='reset']","accessor":"value","attribute":true},"placeholder":{"selector":"input[placeholder],textarea[placeholder]","accessor":"placeholder","attribute":true},"title":{"selector":"[title]","accessor":"title","attribute":true},"a_href":{"selector":"a[href]","accessor":"href","attribute":true},"button":{"accessor":"outertext","attribute":false},"option":{"accessor":"innertext","attribute":false},"aria_label":{"selector":"[aria-label]","accessor":"aria-label","attribute":true},"video_src":{"selector":"video[src]","accessor":"src","attribute":true},"video_poster":{"selector":"video[poster]","accessor":"poster","attribute":true},"video_source_src":{"selector":"video source[src]","accessor":"src","attribute":true},"audio_src":{"selector":"audio[src]","accessor":"src","attribute":true},"audio_source_src":{"selector":"audio source[src]","accessor":"src","attribute":true},"picture_image_src":{"selector":"picture image[src]","accessor":"src","attribute":true},"picture_source_srcset":{"selector":"picture source[srcset]","accessor":"srcset","attribute":true},"image_alt":{"selector":"img[alt]","accessor":"alt","attribute":true},"meta_desc":{"selector":"meta[name=\"description\"],meta[property=\"og:title\"],meta[property=\"og:description\"],meta[property=\"og:site_name\"],meta[property=\"og:image:alt\"],meta[name=\"twitter:title\"],meta[name=\"twitter:description\"],meta[name=\"twitter:image:alt\"],meta[name=\"DC.Title\"],meta[name=\"DC.Description\"]","accessor":"content","attribute":true},"page_title":{"selector":"title","accessor":"innertext","attribute":false},"meta_desc_img":{"selector":"meta[property=\"og:image\"],meta[property=\"og:image:secure_url\"],meta[name=\"twitter:image\"]","accessor":"content","attribute":true}},"trp_attributes_accessors":["outertext","innertext","src","value","placeholder","title","href","aria-label","poster","srcset","alt","content"],"gettranslationsnonceregular":"16caf53f97","showdynamiccontentbeforetranslation":"","skip_strings_from_dynamic_translation":[],"skip_strings_from_dynamic_translation_for_substrings":{"href":["amazon-adsystem","googleads","g.doubleclick"]},"duplicate_detections_allowed":"100","trp_translate_numerals_opt":"no","trp_no_auto_translation_selectors":["[data-no-auto-translation]"]};
+var trp_data = {"trp_custom_ajax_url":"https://lstudio.lt/wp-content/plugins/translatepress-multilingual/includes/trp-ajax.php","trp_wp_ajax_url":"https://lstudio.lt/wp-admin/admin-ajax.php","trp_language_to_query":"en_GB","trp_original_language":"lt_LT","trp_current_language":"en_GB","trp_skip_selectors":["[data-no-translation]","[data-no-dynamic-translation]","[data-trp-translate-id-innertext]","script","style","head","trp-span","translate-press","[data-trp-translate-id]","[data-trpgettextoriginal]","[data-trp-post-slug]"],"trp_base_selectors":["data-trp-translate-id","data-trpgettextoriginal","data-trp-post-slug"],"trp_attributes_selectors":{"text":{"accessor":"outertext","attribute":false},"block":{"accessor":"innertext","attribute":false},"image_src":{"selector":"img[src]","accessor":"src","attribute":true},"submit":{"selector":"input[type='submit'],input[type='button'], input[type='reset']","accessor":"value","attribute":true},"placeholder":{"selector":"input[placeholder],textarea[placeholder]","accessor":"placeholder","attribute":true},"title":{"selector":"[title]","accessor":"title","attribute":true},"a_href":{"selector":"a[href]","accessor":"href","attribute":true},"button":{"accessor":"outertext","attribute":false},"option":{"accessor":"innertext","attribute":false},"aria_label":{"selector":"[aria-label]","accessor":"aria-label","attribute":true},"video_src":{"selector":"video[src]","accessor":"src","attribute":true},"video_poster":{"selector":"video[poster]","accessor":"poster","attribute":true},"video_source_src":{"selector":"video source[src]","accessor":"src","attribute":true},"audio_src":{"selector":"audio[src]","accessor":"src","attribute":true},"audio_source_src":{"selector":"audio source[src]","accessor":"src","attribute":true},"picture_image_src":{"selector":"picture image[src]","accessor":"src","attribute":true},"picture_source_srcset":{"selector":"picture source[srcset]","accessor":"srcset","attribute":true},"image_alt":{"selector":"img[alt]","accessor":"alt","attribute":true},"meta_desc":{"selector":"meta[name=\"description\"],meta[property=\"og:title\"],meta[property=\"og:description\"],meta[property=\"og:site_name\"],meta[property=\"og:image:alt\"],meta[name=\"twitter:title\"],meta[name=\"twitter:description\"],meta[name=\"twitter:image:alt\"],meta[name=\"DC.Title\"],meta[name=\"DC.Description\"]","accessor":"content","attribute":true},"page_title":{"selector":"title","accessor":"innertext","attribute":false},"meta_desc_img":{"selector":"meta[property=\"og:image\"],meta[property=\"og:image:secure_url\"],meta[name=\"twitter:image\"]","accessor":"content","attribute":true}},"trp_attributes_accessors":["outertext","innertext","src","value","placeholder","title","href","aria-label","poster","srcset","alt","content"],"gettranslationsnonceregular":"a2374c6cac","showdynamiccontentbeforetranslation":"","skip_strings_from_dynamic_translation":[],"skip_strings_from_dynamic_translation_for_substrings":{"href":["amazon-adsystem","googleads","g.doubleclick"]},"duplicate_detections_allowed":"100","trp_translate_numerals_opt":"no","trp_no_auto_translation_selectors":["[data-no-auto-translation]"]};
+var trp_data = {"trp_custom_ajax_url":"https://lstudio.lt/wp-content/plugins/translatepress-multilingual/includes/trp-ajax.php","trp_wp_ajax_url":"https://lstudio.lt/wp-admin/admin-ajax.php","trp_language_to_query":"en_GB","trp_original_language":"lt_LT","trp_current_language":"en_GB","trp_skip_selectors":["[data-no-translation]","[data-no-dynamic-translation]","[data-trp-translate-id-innertext]","script","style","head","trp-span","translate-press","[data-trp-translate-id]","[data-trpgettextoriginal]","[data-trp-post-slug]"],"trp_base_selectors":["data-trp-translate-id","data-trpgettextoriginal","data-trp-post-slug"],"trp_attributes_selectors":{"text":{"accessor":"outertext","attribute":false},"block":{"accessor":"innertext","attribute":false},"image_src":{"selector":"img[src]","accessor":"src","attribute":true},"submit":{"selector":"input[type='submit'],input[type='button'], input[type='reset']","accessor":"value","attribute":true},"placeholder":{"selector":"input[placeholder],textarea[placeholder]","accessor":"placeholder","attribute":true},"title":{"selector":"[title]","accessor":"title","attribute":true},"a_href":{"selector":"a[href]","accessor":"href","attribute":true},"button":{"accessor":"outertext","attribute":false},"option":{"accessor":"innertext","attribute":false},"aria_label":{"selector":"[aria-label]","accessor":"aria-label","attribute":true},"video_src":{"selector":"video[src]","accessor":"src","attribute":true},"video_poster":{"selector":"video[poster]","accessor":"poster","attribute":true},"video_source_src":{"selector":"video source[src]","accessor":"src","attribute":true},"audio_src":{"selector":"audio[src]","accessor":"src","attribute":true},"audio_source_src":{"selector":"audio source[src]","accessor":"src","attribute":true},"picture_image_src":{"selector":"picture image[src]","accessor":"src","attribute":true},"picture_source_srcset":{"selector":"picture source[srcset]","accessor":"srcset","attribute":true},"image_alt":{"selector":"img[alt]","accessor":"alt","attribute":true},"meta_desc":{"selector":"meta[name=\"description\"],meta[property=\"og:title\"],meta[property=\"og:description\"],meta[property=\"og:site_name\"],meta[property=\"og:image:alt\"],meta[name=\"twitter:title\"],meta[name=\"twitter:description\"],meta[name=\"twitter:image:alt\"],meta[name=\"DC.Title\"],meta[name=\"DC.Description\"]","accessor":"content","attribute":true},"page_title":{"selector":"title","accessor":"innertext","attribute":false},"meta_desc_img":{"selector":"meta[property=\"og:image\"],meta[property=\"og:image:secure_url\"],meta[name=\"twitter:image\"]","accessor":"content","attribute":true}},"trp_attributes_accessors":["outertext","innertext","src","value","placeholder","title","href","aria-label","poster","srcset","alt","content"],"gettranslationsnonceregular":"a2374c6cac","showdynamiccontentbeforetranslation":"","skip_strings_from_dynamic_translation":[],"skip_strings_from_dynamic_translation_for_substrings":{"href":["amazon-adsystem","googleads","g.doubleclick"]},"duplicate_detections_allowed":"100","trp_translate_numerals_opt":"no","trp_no_auto_translation_selectors":["[data-no-auto-translation]"]};
 //# sourceURL=trp-dynamic-translator-js-extra
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://lstudio.lt/wp-content/plugins/translatepress-multilingual/assets/js/trp-translate-dom-changes.js" id="trp-dynamic-translator-js"></script>
 <script type="text/javascript" id="imaginem-blocks-js-extra">
 /* <![CDATA[ */
-var ajax_var = {"url":"https://lstudio.lt/wp-admin/admin-ajax.php","nonce":"7f26e0b10d"};
-var ajax_var = {"url":"https://lstudio.lt/wp-admin/admin-ajax.php","nonce":"7f26e0b10d"};
+var ajax_var = {"url":"https://lstudio.lt/wp-admin/admin-ajax.php","nonce":"e29ca6ea59"};
+var ajax_var = {"url":"https://lstudio.lt/wp-admin/admin-ajax.php","nonce":"e29ca6ea59"};
 //# sourceURL=imaginem-blocks-js-extra
 /* ]]> */
 </script>
@@ -811,7 +893,7 @@ var ajax_var = {"url":"https://lstudio.lt/wp-admin/admin-ajax.php","nonce":"7f26
 <script type="text/javascript" src="https://lstudio.lt/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js" id="elementor-sticky-js"></script>
 <script type="text/javascript" id="elementor-pro-frontend-js-before">
 /* <![CDATA[ */
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lstudio.lt\/wp-admin\/admin-ajax.php","nonce":"0e0c605919","urls":{"assets":"https:\/\/lstudio.lt\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_GB","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/lstudio.lt\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lstudio.lt\/wp-admin\/admin-ajax.php","nonce":"8343343dd7","urls":{"assets":"https:\/\/lstudio.lt\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_GB","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/lstudio.lt\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 //# sourceURL=elementor-pro-frontend-js-before
 /* ]]> */
 </script>
