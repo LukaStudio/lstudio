@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><meta charset="UTF-8"></head><body><phpunit bootstrap="tests/bootstrap.php" colors="true" backupglobals="false" bestrictaboutteststhatdonottestanything="false">
+
+	<testsuites>
+		<testsuite name="Tests">
+			<directory suffix="Test.php">./tests</directory>
+		</testsuite>
+	</testsuites>
+
+	<coverage processuncoveredfiles="true">
+		<include>
+			<directory suffix=".php">src</directory>
+		</include>
+		<report>
+			</report>
+			<text outputfile="php://stdout" showonlysummary="true"></text>
+		
+	</coverage>
+
+</phpunit>
+</body></html>
